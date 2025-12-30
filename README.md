@@ -16,7 +16,7 @@ Tujuannya sederhana: alur kerja yang ringan, runtime kecil, dan compiler yang mu
 ## Memulai
 
 ```bash
-npm install
+npm install nusajs nusajs-discord nusajs-dom
 npm run dev
 ```
 
@@ -30,24 +30,24 @@ npm run dev
 
 ```bash
 # Jalankan dev server
-node ./bin/nusajs.js dev
+npm run dev
 
 # Build proyek web
-node ./bin/nusajs.js build
+npm run build
 
 # Preview hasil build
-node ./bin/nusajs.js preview
+npm run preview
 
 # Jalankan bot discord (mode simulasi)
-node ./bin/nusajs.js bot
+npm run bot
 ```
 
 ## Template
 
 ```bash
 # Buat proyek baru
-node ./bin/nusajs.js create web ./my-web
-node ./bin/nusajs.js create discord ./my-bot
+npm create web ./my-web
+npm create discord ./my-bot
 ```
 
 ## Lisensi
