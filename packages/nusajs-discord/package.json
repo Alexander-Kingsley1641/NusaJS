@@ -1,0 +1,16 @@
+{
+  "name": "nusajs-discord",
+  "version": "0.0.1",
+  "description": "NusaJS Discord runtime (Pre-Alpha).",
+  "author": "Alex",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.js",
+    "./*": "./src/*"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ]
+}

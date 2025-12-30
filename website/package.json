@@ -1,0 +1,6 @@
+{
+  "name": "nusajs-website",
+  "private": true,
+  "type": "module",
+  "description": "Situs dokumentasi NusaJS."
+}

@@ -1,0 +1,28 @@
+{
+  "name": "nusajs",
+  "version": "0.0.1",
+  "description": "NusaJS core CLI and compiler (Pre-Alpha).",
+  "author": "Alex",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "nusajs": "./bin/nusajs.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./compiler/*": "./src/compiler/*",
+    "./server/*": "./src/server/*",
+    "./shared/*": "./src/shared/*",
+    "./tui/*": "./src/tui/*"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "README.md"
+  ],
+  "dependencies": {
+    "nusajs-dom": "0.0.1",
+    "nusajs-discord": "0.0.1"
+  }
+}

@@ -1,0 +1,7 @@
+export const name = "ping";
+export const description = "Uji respon bot.";
+export async function execute() {
+  return "Pong!";
+}
+
+export default { name, description, execute };

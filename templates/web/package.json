@@ -1,0 +1,13 @@
+{
+  "name": "nusajs-web-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nusajs dev",
+    "build": "nusajs build",
+    "preview": "nusajs preview"
+  },
+  "dependencies": {
+    "nusajs": "0.0.1"
+  }
+}

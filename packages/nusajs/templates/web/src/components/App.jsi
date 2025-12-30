@@ -1,0 +1,32 @@
+import { elemen } from "/@nusajs/runtime/web/elemen.js";
+import { state } from "/@nusajs/runtime/web/state.js";
+
+export function App() {
+  const counter = state(0);
+  const value = elemen("span", { class: "counter" }, counter.get());
+
+  counter.subscribe((next) => {
+    value.textContent = String(next);
+  });
+
+  return elemen(
+    "main",
+    { class: "app" },
+    elemen("img", { class: "logo", src: "/logo.svg", alt: "NusaJS" }),
+    elemen("h1", null, "Halo dari NusaJS"),
+    elemen(
+      "p",
+      null,
+      "Framework JavaScript Indonesia untuk web dan Discord."
+    ),
+    elemen(
+      "button",
+      {
+        class: "btn",
+        onClick: () => counter.set((value) => value + 1),
+      },
+      "Klik ",
+      value
+    )
+  );
+}

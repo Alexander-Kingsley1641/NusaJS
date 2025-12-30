@@ -1,0 +1,37 @@
+{
+  "name": "nusajs",
+  "displayName": "NusaJS",
+  "description": "Syntax highlighting untuk file .jsi (NusaJS).",
+  "version": "0.0.1",
+  "publisher": "alex",
+  "private": true,
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "nusajs",
+        "aliases": [
+          "NusaJS",
+          "jsi"
+        ],
+        "extensions": [
+          ".jsi"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "nusajs",
+        "scopeName": "source.jsi",
+        "path": "./syntaxes/nusajs.tmLanguage.json"
+      }
+    ]
+  },
+  "icon": "icons/jsi-file-icon.png"
+}

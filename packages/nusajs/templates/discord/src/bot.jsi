@@ -1,0 +1,6 @@
+export default {
+  tokenEnv: "NUSA_TOKEN",
+  async setup({ logger }) {
+    logger.info("Bot siap dijalankan.");
+  },
+};

@@ -1,0 +1,50 @@
+{
+  "name": "NusaJS",
+  "scopeName": "source.jsi",
+  "patterns": [
+    { "include": "#directives" },
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#keywords" },
+    { "include": "#numbers" }
+  ],
+  "repository": {
+    "directives": {
+      "patterns": [
+        {
+          "name": "keyword.other.directive.jsi",
+          "match": "^\\s*@\\w[\\w-]*.*$"
+        }
+      ]
+    },
+    "comments": {
+      "patterns": [
+        { "name": "comment.line.double-slash.jsi", "match": "//.*$" },
+        { "name": "comment.block.jsi", "begin": "/\\*", "end": "\\*/" }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        { "name": "string.quoted.double.jsi", "begin": "\"", "end": "\"", "patterns": [{ "match": "\\\\." }] },
+        { "name": "string.quoted.single.jsi", "begin": "'", "end": "'", "patterns": [{ "match": "\\\\." }] },
+        { "name": "string.quoted.template.jsi", "begin": "`", "end": "`", "patterns": [{ "match": "\\\\." }] }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.jsi",
+          "match": "\\b(import|export|from|default|if|else|for|while|return|const|let|var|function|class|new|try|catch|throw|await|async)\\b"
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.jsi",
+          "match": "\\b\\d+(?:\\.\\d+)?\\b"
+        }
+      ]
+    }
+  }
+}

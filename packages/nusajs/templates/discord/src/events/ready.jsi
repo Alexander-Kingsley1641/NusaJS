@@ -1,0 +1,6 @@
+export const event = "ready";
+export function execute({ logger }) {
+  logger.success("Bot Discord siap.");
+}
+
+export default { event, execute };

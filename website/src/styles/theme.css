@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Spectral:wght@400;600&display=swap");
+
+:root {
+  --merah: #d4202b;
+  --putih: #ffffff;
+  --krem: #fff6f1;
+  --hitam: #111827;
+  --abu: #6b7280;
+  --bayang: 0 20px 60px rgba(17, 24, 39, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  color: var(--hitam);
+  background:
+    radial-gradient(circle at 10% 10%, #fff, var(--krem)),
+    radial-gradient(circle at 80% 20%, rgba(212, 32, 43, 0.08), transparent 50%),
+    linear-gradient(180deg, #fff, #f9eee8);
+  min-height: 100vh;
+}
+
+main,
+article {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Spectral", "Times New Roman", serif;
+  margin: 0 0 16px;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+}
+
+p,
+li {
+  color: var(--abu);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+code {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  background: rgba(17, 24, 39, 0.06);
+  padding: 0.1rem 0.4rem;
+  border-radius: 6px;
+  color: var(--hitam);
+}
+
+pre {
+  background: var(--hitam);
+  color: var(--putih);
+  padding: 20px;
+  border-radius: 16px;
+  overflow: auto;
+  box-shadow: var(--bayang);
+}
+
+a {
+  color: var(--merah);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main > * {
+  animation: riseIn 0.6s ease both;
+}
+
+main > *:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+main > *:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+main > *:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+main > *:nth-child(5) {
+  animation-delay: 0.32s;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

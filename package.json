@@ -1,0 +1,21 @@
+{
+  "name": "nusajs-root",
+  "private": true,
+  "version": "0.0.1",
+  "description": "NusaJS monorepo (Pre-Alpha).",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "node server/dev.js",
+    "build": "node server/build.js",
+    "preview": "node server/preview.js",
+    "bot": "node runtime/discord/client.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT"
+}

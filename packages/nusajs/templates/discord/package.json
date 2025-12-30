@@ -1,0 +1,11 @@
+{
+  "name": "nusajs-discord-bot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bot": "nusajs bot"
+  },
+  "dependencies": {
+    "nusajs": "0.0.1"
+  }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NusaJS Web</title>
+    <link rel="icon" href="/logo.svg" />
+    <style>
+      :root {
+        --merah: #d4202b;
+        --hitam: #111827;
+        --krem: #fff6f1;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Space Grotesk", "Segoe UI", sans-serif;
+        color: var(--hitam);
+        background: radial-gradient(circle at top, #fff, var(--krem));
+      }
+      .app {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 48px 24px;
+        gap: 16px;
+      }
+      .logo {
+        width: 120px;
+        height: 120px;
+      }
+      .btn {
+        border: none;
+        border-radius: 999px;
+        padding: 12px 24px;
+        background: var(--merah);
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .counter {
+        display: inline-block;
+        min-width: 2ch;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/index.jsi"></script>
+  </body>
+</html>

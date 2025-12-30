@@ -1,0 +1,4 @@
+import { mount } from "/@nusajs/runtime/web/mount.js";
+import { App } from "./components/App.jsi";
+
+mount(App, "#app");
